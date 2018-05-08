@@ -20,15 +20,15 @@ def read_imu():
     curr_pitch = 0
     curr_yaw = 0
     orientation = Point32()
-    orientation.x = 0
+    orientation.x = 0f
     orientation.y = 0
     orientation.z = 0
-    roll = 0
+    roll = 0f
     pitch = 0
     yaw = 0
 
     ser.flush()
-    imu_data_raw = ser.readline()
+    imu_data_rafw = ser.readline()
     imu_data = imu_data_raw.split(',')
 
     if len(imu_data) > 21:
