@@ -4,6 +4,7 @@
 import rospy
 import math
 from geometry_msgs.msg import Point32,Pose
+from sensor_msgs.msg import NavSatFix
 from std_msgs.msg import Float32
 from utilities import Point, AckermannVehicle , PPController
 import transforms3d as tf
@@ -25,20 +26,21 @@ global file_name
 file_name = "number8.txt"
 
 # Callback function for subscriber to Position and orientation topic:
-def XYZcallback(data):
+
+def pose_callback(data):
 
     global currentPos
+    # rospy.loginfo(rospy.get_caller_id(), data.data)
+    x = data.latitude
+    y = data.longitude
+    iniY,iniX, zoneNum , char = utm.from_latlon(x,y)
+    currentPos.x = iniX
+    currentPos.y = iniY
 
-    currentPos.x = data.position.x
-    currentPos.y = data.position.y
+def heading_callback(data):
+    global currentPos
 
-    euler = tf.euler.quat2euler([data.orientation.x,data.orientation.y,data.orientation.z,data.orientation.w])
-    #euler[1] = euler[1] - 1.57
-    #euler[2] = euler[2] + 3.14
-    currentPos.heading = euler[0]
-
-
-
+    currentPos.heading =  data.z
 
 # 1. Initialize function definition:
 def initialize():
@@ -59,7 +61,8 @@ def execute(cntrl):
     global currentPos
     distance2Goal = 100000000
     # Setup the ROS publishers and subscribers:
-    rospy.Subscriber("/agBOT/local/Pose", Pose, XYZcallback)
+    rospy.Subscriber("/fix", NavSatFix, pose_callback)
+    rospy.Subscriber("/novatel_imu", Point32, heading_callback)
     pub_steering = rospy.Publisher('steering_cmd', Float32, queue_size =10)
     pub_padel = rospy.Publisher('speed_setpoint', Float32, queue_size = 10)
     pub_goal = rospy.Publisher('/current_goalpoint',Point32,queue_size=10)
