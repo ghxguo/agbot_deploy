@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/agbot/agbot_deploy/devel/.private/joyControl/setup.sh

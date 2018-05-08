@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-};
+/home/agbot/agbot_deploy/devel/.private/TCP_command/share/gennodejs/ros/TCP_command/_index.js

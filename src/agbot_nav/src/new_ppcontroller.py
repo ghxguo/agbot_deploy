@@ -4,12 +4,14 @@
 import rospy
 import math
 from geometry_msgs.msg import Point32,Pose
+from sensor_msgs.msg import NavSatFix
 from std_msgs.msg import Float32
 from utilities import Point, AckermannVehicle , PPController
 import transforms3d as tf
 import numpy as np
 import os
 import rospkg
+import utm
 
 rospack = rospkg.RosPack()
 
@@ -22,23 +24,23 @@ global currentPos
 currentPos = Point()
 global file_name
 # file_name = rospy.get_param("/file_name")
-file_name = "number8.txt"
-
+file_name = "waypoints_5_7_3.txt"
 # Callback function for subscriber to Position and orientation topic:
-def XYZcallback(data):
+
+def pose_callback(data):
 
     global currentPos
+    # rospy.loginfo(rospy.get_caller_id(), data.data)
+    x = data.latitude
+    y = data.longitude
+    iniY,iniX, zoneNum , char = utm.from_latlon(x,y)
+    currentPos.x = iniX
+    currentPos.y = iniY
 
-    currentPos.x = data.position.x
-    currentPos.y = data.position.y
+def heading_callback(data):
+    global currentPos
 
-    euler = tf.euler.quat2euler([data.orientation.x,data.orientation.y,data.orientation.z,data.orientation.w])
-    #euler[1] = euler[1] - 1.57
-    #euler[2] = euler[2] + 3.14
-    currentPos.heading = euler[0]
-
-
-
+    currentPos.heading =  data.z
 
 # 1. Initialize function definition:
 def initialize():
@@ -59,7 +61,8 @@ def execute(cntrl):
     global currentPos
     distance2Goal = 100000000
     # Setup the ROS publishers and subscribers:
-    rospy.Subscriber("/agBOT/local/Pose", Pose, XYZcallback)
+    rospy.Subscriber("/fix", NavSatFix, pose_callback)
+    rospy.Subscriber("/novatel_imu", Point32, heading_callback)
     pub_steering = rospy.Publisher('steering_cmd', Float32, queue_size =10)
     pub_padel = rospy.Publisher('speed_setpoint', Float32, queue_size = 10)
     pub_goal = rospy.Publisher('/current_goalpoint',Point32,queue_size=10)
@@ -87,7 +90,7 @@ def execute(cntrl):
 
         # Compute the new Euclidean error:
         current_goalPoint = Point32(goalPoint.x,goalPoint.y,0)
-        # print('current Index: ',cntrl.currWpIdx)
+        print('current Index: ',cntrl.currWpIdx)
         # print('waypoint list:', cntrl.wpList[:cntrl.currWpIdx])
         # current_goalPoint = [str(goalPoint.x),str(goalPoint.y),'0']
         pub_goal.publish(current_goalPoint)
@@ -95,7 +98,7 @@ def execute(cntrl):
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
 
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
-        if (distance2Goal < 0):
+        if (distance2Goal < 0.2):
 
             # Make the AckermannVehicle stop where it is
             #pub.publish(stationaryCommand)
@@ -130,7 +133,7 @@ def execute(cntrl):
         #command.y = vel
 
         # Publish the computed command:
-        pub_steering.publish(delta)
+        pub_steering.publish(-delta)
         pub_padel.publish(vel)
 
             # Recompute the Euclidean error to see if its reducing:

@@ -49,9 +49,9 @@ class PPController:
         self.nPts = 0
 
         # Tuning gains:
-        self.k_theta = 0.2
+        self.k_theta = 0.3
 
-        self.k_delta = 0.6
+        self.k_delta = 1.2
 
         self.k_vel = 0.1
 
@@ -124,7 +124,7 @@ class PPController:
 
         distance2Goal = np.dot(vecRobot2Wp.T, self.unit_vector(vecCurHeading))
         # vecNormAtGoal = self.segNormVecList[:,self.currWpIdx] + self.wpList[self.currWpIdx + 1]
-        # print('distance2Goal', distance2Goal)
+        print('distance2Goal', distance2Goal)
 
         # Compute the minimum distance from the current segment:
         minDist = np.dot(vecRobot2Wp.T, self.segNormVecList[:,self.currWpIdx])
@@ -133,15 +133,15 @@ class PPController:
             theta_gain = math.pi/2
         if theta_gain < -math.pi/2:
             theta_gain = -math.pi/2
-        # print('minDist = ', minDist)
-        # print('theta_gain =', theta_gain)
+        print('minDist = ', minDist)
+        print('theta_gain =', theta_gain)
         # Compute the desired heading angle based of target heading and the min dist:
         # if self.tgtHeading[self.currWpIdx] >= 0:
         theta_des = self.tgtHeading[self.currWpIdx] + theta_gain
         # else:
         #     theta_des = self.tgtHeading[self.currWpIdx] - theta_gain
 
-        # print('Theta des = ',theta_des)
+        print('Theta des = ',theta_des)
         # Compute the steering agle command:
         # theta_des_vec =(math.cos(theta_des), math.sin(theta_des))
         # curr_heading_vec = (math.cos(current.heading), math.sin(current.heading))
@@ -161,7 +161,7 @@ class PPController:
         #     # print ( "Normal Vec = ", self.segNormVecList[:,self.currWpIdx])
         #     # print (" Robot2Wp Vec = ", vecRobot2Wp)
         #     print (" Minimum Dist = ", minDist)
-        # print('Target heading = ', self.tgtHeading[self.currWpIdx] )
+        print('Target heading = ', self.tgtHeading[self.currWpIdx] )
         #     print (" Current heading = " , current.heading)
         #     # print (" Desired Theta = ", theta_des)
         #     print (" Steering angle = ", delta)

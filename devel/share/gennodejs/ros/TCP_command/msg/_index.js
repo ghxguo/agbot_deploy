@@ -1,8 +1,1 @@
-
-"use strict";
-
-let tcpCommand = require('./tcpCommand.js');
-
-module.exports = {
-  tcpCommand: tcpCommand,
-};
+/home/agbot/agbot_deploy/devel/.private/TCP_command/share/gennodejs/ros/TCP_command/msg/_index.js

@@ -1,0 +1,1 @@
+/home/agbot/agbot_deploy/devel/.private/novatel_imu/share/novatel_imu/cmake/novatel_imuConfig-version.cmake

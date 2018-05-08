@@ -1,10 +1,1 @@
-(cl:in-package TCP_command-msg)
-(cl:export '(HEADER-VAL
-          HEADER
-          PEDAL_PERCENT-VAL
-          PEDAL_PERCENT
-          STEERING_PERCENT-VAL
-          STEERING_PERCENT
-          ENGINECUT-VAL
-          ENGINECUT
-))
+/home/agbot/agbot_deploy/devel/.private/TCP_command/share/common-lisp/ros/TCP_command/msg/_package_tcpCommand.lisp

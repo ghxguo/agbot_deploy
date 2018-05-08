@@ -1,0 +1,8 @@
+prefix=/home/agbot/agbot_deploy/devel/.private/joyControl
+
+Name: joyControl
+Description: Description of joyControl
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/agbot/agbot_deploy/devel/.private/joyControl/lib 
+Requires: 
