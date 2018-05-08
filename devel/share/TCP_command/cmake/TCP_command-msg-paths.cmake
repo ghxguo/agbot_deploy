@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(TCP_command_MSG_INCLUDE_DIRS "/home/hongxu/agbot_deploy/src/TCP_command/msg")
-set(TCP_command_MSG_DEPENDENCIES std_msgs)
+/home/agbot/agbot_deploy/devel/.private/TCP_command/share/TCP_command/cmake/TCP_command-msg-paths.cmake

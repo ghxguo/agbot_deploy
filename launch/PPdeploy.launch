@@ -4,6 +4,8 @@
   <node pkg="speed_pid" type="speed_control.py" name="speed_control"/>
   <node pkg="TCP_command" type="TCPTest.py" name="TPCtoArduino"/>
   <param name="pidBypass" value="True"/>
-
+  <node name="rtk_node" pkg="rtk" type="rtk.py"/>
+  <node name="imu_node" pkg="novatel_imu" type="read_imu.py"/>
+  <include file="$(find novatel_gps_driver)/launch/tester_for_usb.launch"/>
 
 </launch>

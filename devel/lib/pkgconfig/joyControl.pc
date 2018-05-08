@@ -1,8 +1,1 @@
-prefix=/home/hongxu/agbot_deploy/devel
-
-Name: joyControl
-Description: Description of joyControl
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/hongxu/agbot_deploy/devel/lib 
-Requires: 
+/home/agbot/agbot_deploy/devel/.private/joyControl/lib/pkgconfig/joyControl.pc

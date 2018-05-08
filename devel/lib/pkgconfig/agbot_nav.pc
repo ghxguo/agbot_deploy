@@ -1,8 +1,1 @@
-prefix=/home/hongxu/agbot_deploy/devel
-
-Name: agbot_nav
-Description: Description of agbot_nav
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/hongxu/agbot_deploy/devel/lib 
-Requires: 
+/home/agbot/agbot_deploy/devel/.private/agbot_nav/lib/pkgconfig/agbot_nav.pc

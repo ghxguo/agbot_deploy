@@ -1,7 +1,1 @@
-(cl:defpackage TCP_command-msg
-  (:use )
-  (:export
-   "<TCPCOMMAND>"
-   "TCPCOMMAND"
-  ))
-
+/home/agbot/agbot_deploy/devel/.private/TCP_command/share/common-lisp/ros/TCP_command/msg/_package.lisp
