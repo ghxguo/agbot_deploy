@@ -20,15 +20,15 @@ def read_imu():
     curr_pitch = 0
     curr_yaw = 0
     orientation = Point32()
-    orientation.x = 0f
+    orientation.x = 0
     orientation.y = 0
     orientation.z = 0
-    roll = 0f
+    roll = 0
     pitch = 0
     yaw = 0
 
     ser.flush()
-    imu_data_rafw = ser.readline()
+    imu_data_raw = ser.readline()
     imu_data = imu_data_raw.split(',')
 
     if len(imu_data) > 21:
@@ -40,6 +40,8 @@ def read_imu():
     imu_pub = rospy.Publisher('/novatel_imu', Point32, queue_size=10)
     rospy.init_node ('novatel_imu', anonymous=True)
     rate = rospy.Rate(20)
+    imu_data = 0
+    imu_data_raw = 0
 
     while not rospy.is_shutdown():
 

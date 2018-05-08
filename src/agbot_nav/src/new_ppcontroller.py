@@ -11,6 +11,7 @@ import transforms3d as tf
 import numpy as np
 import os
 import rospkg
+import utm
 
 rospack = rospkg.RosPack()
 
@@ -23,8 +24,7 @@ global currentPos
 currentPos = Point()
 global file_name
 # file_name = rospy.get_param("/file_name")
-file_name = "number8.txt"
-
+file_name = "waypoints_5_7_3.txt"
 # Callback function for subscriber to Position and orientation topic:
 
 def pose_callback(data):
@@ -90,7 +90,7 @@ def execute(cntrl):
 
         # Compute the new Euclidean error:
         current_goalPoint = Point32(goalPoint.x,goalPoint.y,0)
-        # print('current Index: ',cntrl.currWpIdx)
+        print('current Index: ',cntrl.currWpIdx)
         # print('waypoint list:', cntrl.wpList[:cntrl.currWpIdx])
         # current_goalPoint = [str(goalPoint.x),str(goalPoint.y),'0']
         pub_goal.publish(current_goalPoint)
@@ -98,7 +98,7 @@ def execute(cntrl):
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
 
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
-        if (distance2Goal < 0):
+        if (distance2Goal < 0.2):
 
             # Make the AckermannVehicle stop where it is
             #pub.publish(stationaryCommand)
@@ -133,7 +133,7 @@ def execute(cntrl):
         #command.y = vel
 
         # Publish the computed command:
-        pub_steering.publish(delta)
+        pub_steering.publish(-delta)
         pub_padel.publish(vel)
 
             # Recompute the Euclidean error to see if its reducing:
