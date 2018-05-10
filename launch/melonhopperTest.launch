@@ -8,4 +8,8 @@
   <param name="melonBypass" value="True"/>
   <param name="maxPixel" value = "400"/>
   <param name="Kp_melon" value = "0.5"/>
+  <param name="PP_restart" value = "False"/>
+  <param name="bypassPedalPos" value = "0.4"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+  </include>
 </launch>

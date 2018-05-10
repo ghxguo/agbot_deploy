@@ -7,5 +7,5 @@
   <node pkg="TCP_command" type="TCPTest.py" name="TPCtoArduino"/>
   <param name="pidBypass" value="True"/>
   <node name="rtk_node" pkg="rtk" type="rtk.py"/>
-
+  <param name="PP_restart" value = "False"/>
 </launch>
