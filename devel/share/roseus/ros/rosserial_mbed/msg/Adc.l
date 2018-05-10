@@ -1,0 +1,1 @@
+/home/hongxu/agbot_deploy/devel/.private/rosserial_mbed/share/roseus/ros/rosserial_mbed/msg/Adc.l

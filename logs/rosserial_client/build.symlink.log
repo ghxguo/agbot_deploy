@@ -1,0 +1,4 @@
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_client/lib/pkgconfig/rosserial_client.pc, /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_client.pc)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_client/lib/python2.7/dist-packages/rosserial_client/__init__.py, /home/hongxu/agbot_deploy/devel/lib/python2.7/dist-packages/rosserial_client/__init__.py)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_client/share/rosserial_client/cmake/rosserial_clientConfig.cmake, /home/hongxu/agbot_deploy/devel/share/rosserial_client/cmake/rosserial_clientConfig.cmake)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_client/share/rosserial_client/cmake/rosserial_clientConfig-version.cmake, /home/hongxu/agbot_deploy/devel/share/rosserial_client/cmake/rosserial_clientConfig-version.cmake)

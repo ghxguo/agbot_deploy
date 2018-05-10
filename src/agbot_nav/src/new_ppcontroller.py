@@ -18,7 +18,7 @@ rospack = rospkg.RosPack()
 
 ### Define constants:
 pi = 3.141592653589793238
-velocity = 6 #km/hr
+velocity = int(rospy.get_param("/Vehicle_speed_in_km_hr")) #km/hr
 # Define global variables:
 global currentPos
 currentPos = Point()
@@ -87,6 +87,8 @@ def execute(cntrl):
     goalReached = False
     # Loop through as long as the node is not shutdown:
     while not rospy.is_shutdown():
+        velocity = int(rospy.get_param("/Vehicle_speed_in_km_hr")) #km/hr
+        cntrl.maximumVelocity = velocity
         restart = rospy.get_param("/PP_restart")
         if restart:
             cntrl.currWpIdx = 0

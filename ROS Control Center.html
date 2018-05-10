@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://pantor.github.io/ros-control-center/dashboard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>ROS Control Center</title><!--<base href="/ros-control-center/">--><base href="."><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="./ROS Control Center_files/ros-logo.svg"><link href="./ROS Control Center_files/styles.5b58786150c0239dc5ba.bundle.css" rel="stylesheet"><style>.sidebar[_ngcontent-c0]{border-left:1px solid #f4f5f7;overflow-x:scroll;overflow-y:auto}.console-row[_ngcontent-c0]{border-bottom:1px solid #f4f5f7}.battery[_ngcontent-c0]{position:absolute;bottom:0;padding:15px 15px 0 15px;width:100%;background-color:#fff;border-top:1px solid #f4f5f7}</style><style></style></head><body><app-root ng-version="5.1.3"><nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light mb-2">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerlink="/" href="http://pantor.github.io/ros-control-center/">
+        <img height="22px" src="./ROS Control Center_files/ros-logo.svg">
+      </a>
+      <a class="navbar-brand" routerlink="/" href="http://pantor.github.io/ros-control-center/">
+        <img height="22px" src="./ROS Control Center_files/ros.svg">
+      </a>
+    </div>
+
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item active" routerlinkactive="active">
+        <a class="nav-link" routerlink="/dashboard" href="http://pantor.github.io/ros-control-center/dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item" routerlinkactive="active">
+        <a class="nav-link" routerlink="/settings" href="http://pantor.github.io/ros-control-center/settings">Settings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/gaug-cns/ros-control-center" target="_blank">GitHub</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet><app-dashboard _nghost-c0=""><div _ngcontent-c0="" class="container-fluid">
+  <div _ngcontent-c0="" class="row justify-content-center">
+    <!---->
+
+    <!---->
+
+    <!---->
+  </div>
+
+  <!----><div _ngcontent-c0="" class="row">
+    <div _ngcontent-c0="" class="col-9">
+      <div _ngcontent-c0="" class="row">
+        <div _ngcontent-c0="" class="col-sm-3">
+          <!----><div _ngcontent-c0="" class="card card-node active">
+            <h6 _ngcontent-c0="" class="card-title">Pure Pursuite</h6>
+          </div><div _ngcontent-c0="" class="card card-node">
+            <h6 _ngcontent-c0="" class="card-title">Base Level Control</h6>
+          </div>
+
+          <!----><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">Kp Melon</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">Speed Ki</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">PP Restart</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">File Name</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">Speed Kd</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">Speed Ki UpperLimit</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">MelonBypass(0 Or 1)</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">MaxPixel</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">PidBypass(0 Or 1)</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">BypassPedalPos</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">Vehicle Speed In Km Hr</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">Speed Kp</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter><app-parameter _ngcontent-c0="" _nghost-c1=""><div _ngcontent-c1="" class="card">
+  <h6 _ngcontent-c1="" class="card-title">Speed Ki LowerLimit</h6>
+
+  <div _ngcontent-c1="" class="card-body-sm">
+    <div _ngcontent-c1="" class="d-flex justify-content-between">
+      <div _ngcontent-c1="" class="input-group mr-2">
+        <input _ngcontent-c1="" class="form-control ng-untouched ng-pristine ng-valid" type="text">
+      </div>
+
+      <button _ngcontent-c1="" class="btn btn-secondary" type="button">Set</button>
+    </div>
+  </div>
+</div>
+</app-parameter>
+        </div>
+
+        <!----><div _ngcontent-c0="" class="col-sm-9">
+          <p _ngcontent-c0="" class="lead" style="font-size: 28px;">Pure Pursuite</p>
+
+          <!----><app-topic _ngcontent-c0="" _nghost-c2=""><div _ngcontent-c2="" class="card">
+  <div _ngcontent-c2="" class="d-flex justify-content-between align-items-center">
+    <h5 _ngcontent-c2="" class="card-title">
+      Current Goalpoint
+      <small _ngcontent-c2="" class="text-muted">(geometry_msgs/Point32)</small>
+    </h5>
+
+    <button _ngcontent-c2="" class="btn btn-outline-success btn-sm btn-title">Subscribe</button>
+  </div>
+
+  <!----><div _ngcontent-c2="" class="card-body-sm">
+    <form _ngcontent-c2="" class="d-flex ng-untouched ng-pristine ng-valid" novalidate="">
+      <app-type _ngcontent-c2="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-row">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        X <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Y <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Z <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+
+      <button _ngcontent-c2="" class="btn btn-secondary align-self-end" type="button">Publish</button>
+    </form>
+  </div>
+</div>
+</app-topic><app-topic _ngcontent-c0="" _nghost-c2=""><div _ngcontent-c2="" class="card">
+  <div _ngcontent-c2="" class="d-flex justify-content-between align-items-center">
+    <h5 _ngcontent-c2="" class="card-title">
+      Speed Setpoint
+      <small _ngcontent-c2="" class="text-muted">(std_msgs/Float32)</small>
+    </h5>
+
+    <button _ngcontent-c2="" class="btn btn-outline-success btn-sm btn-title">Subscribe</button>
+  </div>
+
+  <!----><div _ngcontent-c2="" class="card-body-sm">
+    <form _ngcontent-c2="" class="d-flex ng-untouched ng-pristine ng-valid" novalidate="">
+      <app-type _ngcontent-c2="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-row">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!---->
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+
+      <button _ngcontent-c2="" class="btn btn-secondary align-self-end" type="button">Publish</button>
+    </form>
+  </div>
+</div>
+</app-topic><app-topic _ngcontent-c0="" _nghost-c2=""><div _ngcontent-c2="" class="card">
+  <div _ngcontent-c2="" class="d-flex justify-content-between align-items-center">
+    <h5 _ngcontent-c2="" class="card-title">
+      Steering Cmd
+      <small _ngcontent-c2="" class="text-muted">(std_msgs/Float32)</small>
+    </h5>
+
+    <button _ngcontent-c2="" class="btn btn-outline-success btn-sm btn-title">Subscribe</button>
+  </div>
+
+  <!----><div _ngcontent-c2="" class="card-body-sm">
+    <form _ngcontent-c2="" class="d-flex ng-untouched ng-pristine ng-valid" novalidate="">
+      <app-type _ngcontent-c2="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-row">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!---->
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+
+      <button _ngcontent-c2="" class="btn btn-secondary align-self-end" type="button">Publish</button>
+    </form>
+  </div>
+</div>
+</app-topic><app-topic _ngcontent-c0="" _nghost-c2=""><div _ngcontent-c2="" class="card">
+  <div _ngcontent-c2="" class="d-flex justify-content-between align-items-center">
+    <h5 _ngcontent-c2="" class="card-title">
+      Fix
+      <small _ngcontent-c2="" class="text-muted">(sensor_msgs/NavSatFix)</small>
+    </h5>
+
+    <button _ngcontent-c2="" class="btn btn-outline-success btn-sm btn-title">Subscribe</button>
+  </div>
+
+  <!----><div _ngcontent-c2="" class="card-body-sm">
+    <form _ngcontent-c2="" class="d-flex ng-untouched ng-pristine ng-valid" novalidate="">
+      <app-type _ngcontent-c2="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-column">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!----><div _ngcontent-c4="">
+      <strong _ngcontent-c4="">
+        Header <!---->
+      </strong>
+      <app-type _ngcontent-c4="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-column">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Seq <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="uint32">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!----><div _ngcontent-c4="">
+      <strong _ngcontent-c4="">
+        Stamp <!---->
+      </strong>
+      <app-type _ngcontent-c4="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-row">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Secs <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="int32">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Nsecs <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="int32">
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+    </div>
+
+    <!---->
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Frame Id <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="text" placeholder="string">
+
+        <!---->
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+    </div>
+
+    <!---->
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!----><div _ngcontent-c4="">
+      <strong _ngcontent-c4="">
+        Status <!---->
+      </strong>
+      <app-type _ngcontent-c4="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-row">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Status <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="int8">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Service <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="uint16">
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+    </div>
+
+    <!---->
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Latitude <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float64">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Longitude <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float64">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Altitude <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float64">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Position Covariance <!----><span _ngcontent-c4="">9</span>
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float64">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Position Covariance Type <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="uint8">
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+
+      <button _ngcontent-c2="" class="btn btn-secondary align-self-end" type="button">Publish</button>
+    </form>
+  </div>
+</div>
+</app-topic><app-topic _ngcontent-c0="" _nghost-c2=""><div _ngcontent-c2="" class="card">
+  <div _ngcontent-c2="" class="d-flex justify-content-between align-items-center">
+    <h5 _ngcontent-c2="" class="card-title">
+      Novatel Imu
+      <small _ngcontent-c2="" class="text-muted">(geometry_msgs/Point32)</small>
+    </h5>
+
+    <button _ngcontent-c2="" class="btn btn-outline-success btn-sm btn-title">Subscribe</button>
+  </div>
+
+  <!----><div _ngcontent-c2="" class="card-body-sm">
+    <form _ngcontent-c2="" class="d-flex ng-untouched ng-pristine ng-valid" novalidate="">
+      <app-type _ngcontent-c2="" _nghost-c4=""><div _ngcontent-c4="" class="d-flex flex-row">
+  <!----><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        X <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Y <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div><div _ngcontent-c4="" class="d-flex-g mt-2 mr-2">
+    <!---->
+
+    <!----><div _ngcontent-c4="">
+      <!----><small _ngcontent-c4="" class="text-muted">
+        Z <!---->
+      </small>
+      <div _ngcontent-c4="" class="input-group">
+        <!---->
+
+        <!---->
+
+        <!----><input _ngcontent-c4="" class="form-control ng-untouched ng-pristine ng-valid" type="number" placeholder="float32">
+
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+</app-type>
+
+      <button _ngcontent-c2="" class="btn btn-secondary align-self-end" type="button">Publish</button>
+    </form>
+  </div>
+</div>
+</app-topic>
+          <!---->
+          <!---->
+        </div>
+      </div>
+    </div>
+
+    <div _ngcontent-c0="" class="col-3">
+      <div _ngcontent-c0="" class="col sidebar">
+        <!---->
+      </div>
+
+      <!---->
+    </div>
+  </div>
+</div>
+</app-dashboard>
+</app-root><script type="text/javascript" src="./ROS Control Center_files/inline.d5eebc3702e40c12f0b1.bundle.js"></script><script type="text/javascript" src="./ROS Control Center_files/polyfills.04eee28771701d47ae41.bundle.js"></script><script type="text/javascript" src="./ROS Control Center_files/main.a7fbc40965cd99ec2b27.bundle.js"></script>
+</body></html>

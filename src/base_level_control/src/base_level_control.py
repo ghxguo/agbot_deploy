@@ -41,8 +41,8 @@ melon_location_x = 0
 melon_location_y = 0
 melon_detected = False
 object_detected = "None"
-pidBypass = rospy.get_param("/pidBypass")
-melon_detection_Bypass = rospy.get_param("/melonBypass")
+# pidBypass = rospy.get_param("/pidBypass")
+# melon_detection_Bypass = rospy.get_param("/melonBypass")
 maxPixel = rospy.get_param("/maxPixel")
 Kp_melon = rospy.get_param("/Kp_melon")
 melon_state = False
@@ -112,36 +112,42 @@ def speed_control():
     p.setIMax(I_max)
     p.setIMin(I_min)
     while not rospy.is_shutdown():
-        byPassPedalPos = rospy.get_param("/bypassPedalPos")
+        pidBypass = int(rospy.get_param("/pidBypass(0_or_1)"))
+        melon_detection_Bypass = int(rospy.get_param("/melonBypass(0_or_1)"))
+        Kp_melon = float(rospy.get_param("/Kp_melon"))
+        byPassPedalPosMax = float(rospy.get_param("/bypassPedalPosMax"))
+        byPassPedalPosMin = float(rospy.get_param("/bypassPedalPosMin"))
+        byPassBandWidth = float(rospy.get_param("/byPassBandWidth"))
+        speed_Kp = float(rospy.get_param("/speed_Kp"))
+        speed_Ki = float(rospy.get_param("/speed_Ki"))
+        speed_Kd = float(rospy.get_param("/speed_Kd"))
+        speed_Ki_upperLimit = int(rospy.get_param("/speed_Ki_upperLimit"))
+        speed_Ki_lowerLimit = int(rospy.get_param("/speed_Ki_lowerLimit"))
+        p.setKp(speed_Kp)
+        p.setKi(speed_Ki)
+        p.setKd(speed_Kd)
+        p.setIMax(speed_Ki_upperLimit)
+        p.setIMin(speed_Ki_lowerLimit)
         steering_melon = 0
-        if melon_detected and not melon_indexed:
-            melon_state = True
-            melon_indexed = True
-        if melon_state:
-            if melon_location_y < (maxPixel - 50):
-                error = melon_location_x - maxPixel/2
-                steering_melon = Kp_melon * error
-                if steering_melon > 1:
-                    steering_melon = 1
-                elif steering_melon < -1:
-                    steering_melon = -1
+
+        if pidBypass:
+            error = speed_set - speed_feedback
+            if error < 0 - speed_set*byPassBandWidth:
+                msg.pedal_percent = byPassPedalPosMin
+            elif error > speed_set*byPassBandWidth:
+                msg.pedal_percent = byPassPedalPosMax
             else:
-                melon_state = False
-        elif melon_indexed:
-            if trailer_state == "Testing Ripeness":
-                melon_indexed = False
+                msg.pedal_percent = (byPassPedalPosMax + byPassPedalPosMin)/2
         else:
-            steering_melon = steering
+            if not speed_set == -1:
 
-        if not speed_set == -1:
-
-            p.setPoint(speed_set)
-            pid = p.update(speed_feedback)
-            if(pid > 1):
-                pid = 1
-            elif pid < 0:
-                pid = 0
-
+                p.setPoint(speed_set)
+                pid = p.update(speed_feedback)
+                if(pid > 1):
+                    pid = 1
+                elif pid < 0:
+                    pid = 0
+            msg.pedal_percent = pid
         if engineCut:
             msg.engineCut = True
         else:
@@ -149,20 +155,38 @@ def speed_control():
 
         if melon_detection_Bypass:
             msg.steering_percent = steering
-            if pidBypass:
-                msg.pedal_percent = byPassPedalPos
-            else:
-                msg.pedal_percent = pid
+
         else:
-            msg.steering_percent = steering_melon
-            if pidBypass:
-                msg.pedal_percent = byPassPedalPos
+            if melon_detected and not melon_indexed:
+                melon_state = True
+                # melon_indexed = True
+            if melon_state:
+                # if melon_location_y < (maxPixel - 50):
+                error = float(melon_location_x) - float(maxPixel/2)
+                if abs(error) > 30:
+                    steering_melon = Kp_melon * error
+                    if steering_melon > 1:
+                        steering_melon = 1
+                    elif steering_melon < -1:
+                        steering_melon = -1
+                else:
+                    melon_state = False
+                    melon_indexed = True
+
+            elif melon_indexed:
+                steering_melon = 0
+                if trailer_state == "Testing Ripeness":
+                    melon_indexed = False
             else:
-                msg.pedal_percent = pid
-        if trailer_state == "Picking up Watermelon":
+                steering_melon = steering
+            msg.steering_percent = steering_melon
+
+        if trailer_state == "Picking up Watermelon" or \
+            trailer_state == "Moving Watermelon to Bin" or \
+            trailer_state == "Lowering Scooper":
             msg.pedal_percent = -1 #bypass speed control and stop the car
-        if not object_detected == "None":
-            msg.pedal_percent = -1
+        # if not object_detected == "None":
+        #     msg.pedal_percent = -1
         if speed_set == -1:
             msg.pedal_percent = -1
         print(msg.pedal_percent)
