@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/agbot/agbot_deploy/devel/.private/catkin_tools_prebuild:$CMAKE_PREFIX_PATH"
-export PWD="/home/agbot/agbot_deploy/build/catkin_tools_prebuild"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/agbot/agbot_deploy/devel/.private/catkin_tools_prebuild/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/agbot/agbot_deploy/build/catkin_tools_prebuild:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/hongxu/agbot_deploy/devel/.private/catkin_tools_prebuild:$CMAKE_PREFIX_PATH"
+export PWD="/home/hongxu/agbot_deploy/build/catkin_tools_prebuild"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/hongxu/agbot_deploy/devel/.private/catkin_tools_prebuild/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/hongxu/agbot_deploy/build/catkin_tools_prebuild:$ROS_PACKAGE_PATH"

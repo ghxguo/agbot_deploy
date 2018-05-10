@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TCP_command_generate_messages_cpp"
-  "/home/agbot/agbot_deploy/devel/.private/TCP_command/include/TCP_command/tcpCommand.h"
+  "/home/hongxu/agbot_deploy/devel/.private/TCP_command/include/TCP_command/tcpCommand.h"
 )
 
 # Per-language clean rules from dependency scanning.

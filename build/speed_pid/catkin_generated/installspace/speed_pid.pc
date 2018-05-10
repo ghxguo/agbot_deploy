@@ -1,8 +1,8 @@
-prefix=/home/agbot/agbot_deploy/install
+prefix=/home/hongxu/agbot_deploy/install
 
 Name: speed_pid
 Description: Description of speed_pid
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/agbot/agbot_deploy/install/lib 
+Libs: -L/home/hongxu/agbot_deploy/install/lib 
 Requires: 

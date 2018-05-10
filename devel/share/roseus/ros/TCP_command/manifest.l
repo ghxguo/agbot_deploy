@@ -1,1 +1,1 @@
-/home/agbot/agbot_deploy/devel/.private/TCP_command/share/roseus/ros/TCP_command/manifest.l
+/home/hongxu/agbot_deploy/devel/.private/TCP_command/share/roseus/ros/TCP_command/manifest.l

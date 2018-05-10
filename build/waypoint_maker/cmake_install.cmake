@@ -1,8 +1,8 @@
-# Install script for directory: /home/agbot/agbot_deploy/src/waypoint_maker
+# Install script for directory: /home/hongxu/agbot_deploy/src/waypoint_maker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/agbot/agbot_deploy/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hongxu/agbot_deploy/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,94 +44,94 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/agbot/agbot_deploy/install/_setup_util.py")
+   "/home/hongxu/agbot_deploy/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/agbot/agbot_deploy/install" TYPE PROGRAM FILES "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/hongxu/agbot_deploy/install" TYPE PROGRAM FILES "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/agbot/agbot_deploy/install/env.sh")
+   "/home/hongxu/agbot_deploy/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/agbot/agbot_deploy/install" TYPE PROGRAM FILES "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/hongxu/agbot_deploy/install" TYPE PROGRAM FILES "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/agbot/agbot_deploy/install/setup.bash")
+   "/home/hongxu/agbot_deploy/install/setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/agbot/agbot_deploy/install" TYPE FILE FILES "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/home/hongxu/agbot_deploy/install" TYPE FILE FILES "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/setup.bash")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/agbot/agbot_deploy/install/setup.sh")
+   "/home/hongxu/agbot_deploy/install/setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/agbot/agbot_deploy/install" TYPE FILE FILES "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/home/hongxu/agbot_deploy/install" TYPE FILE FILES "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/setup.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/agbot/agbot_deploy/install/setup.zsh")
+   "/home/hongxu/agbot_deploy/install/setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/agbot/agbot_deploy/install" TYPE FILE FILES "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/home/hongxu/agbot_deploy/install" TYPE FILE FILES "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/setup.zsh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/agbot/agbot_deploy/install/.rosinstall")
+   "/home/hongxu/agbot_deploy/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/agbot/agbot_deploy/install" TYPE FILE FILES "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/hongxu/agbot_deploy/install" TYPE FILE FILES "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/waypoint_maker.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/waypoint_maker.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/cmake" TYPE FILE FILES
-    "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig.cmake"
-    "/home/agbot/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig-version.cmake"
+    "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig.cmake"
+    "/home/hongxu/agbot_deploy/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker" TYPE FILE FILES "/home/agbot/agbot_deploy/src/waypoint_maker/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker" TYPE FILE FILES "/home/hongxu/agbot_deploy/src/waypoint_maker/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/agbot/agbot_deploy/build/waypoint_maker/gtest/cmake_install.cmake")
+  include("/home/hongxu/agbot_deploy/build/waypoint_maker/gtest/cmake_install.cmake")
 
 endif()
 
@@ -143,5 +143,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/agbot/agbot_deploy/build/waypoint_maker/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hongxu/agbot_deploy/build/waypoint_maker/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

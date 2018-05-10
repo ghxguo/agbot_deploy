@@ -1,0 +1,12 @@
+Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/joyControl.pc
+Symlinking /home/hongxu/agbot_deploy/devel/share/joyControl/cmake/joyControlConfig.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/share/joyControl/cmake/joyControlConfig-version.cmake
+Cleaning: (/home/agbot/agbot_deploy/devel/.private/joyControl/lib/pkgconfig/joyControl.pc, /home/agbot/agbot_deploy/devel/lib/pkgconfig/joyControl.pc)
+Cleaning: (/home/agbot/agbot_deploy/devel/.private/joyControl/share/joyControl/cmake/joyControlConfig.cmake, /home/agbot/agbot_deploy/devel/share/joyControl/cmake/joyControlConfig.cmake)
+Cleaning: (/home/agbot/agbot_deploy/devel/.private/joyControl/share/joyControl/cmake/joyControlConfig-version.cmake, /home/agbot/agbot_deploy/devel/share/joyControl/cmake/joyControlConfig-version.cmake)
+Unlinking: /home/agbot/agbot_deploy/devel/lib/pkgconfig/joyControl.pc
+Already unlinked: {}
+Unlinking: /home/agbot/agbot_deploy/devel/share/joyControl/cmake/joyControlConfig.cmake
+Already unlinked: {}
+Unlinking: /home/agbot/agbot_deploy/devel/share/joyControl/cmake/joyControlConfig-version.cmake
+Already unlinked: {}
