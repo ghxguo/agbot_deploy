@@ -160,11 +160,11 @@ def speed_control():
             else:
                 msg.pedal_percent = pid
         if trailer_state == "Picking up Watermelon":
-            msg.pedal_percent = 10 #bypass speed control and stop the car
-        if object_detected:
-            msg.pedal_percent = 10
+            msg.pedal_percent = -1 #bypass speed control and stop the car
+        if not object_detected == "None":
+            msg.pedal_percent = -1
         if speed_set == -1:
-            msg.pedal_percent = 10
+            msg.pedal_percent = -1
         print(msg.pedal_percent)
         pub.publish(msg)
         rate.sleep()
