@@ -12,6 +12,7 @@
 #     pid = p.update(measurement_value)
 #
 #
+
 import rospy
 from TCP_command.msg import tcpCommand
 from std_msgs.msg import Float32
@@ -47,7 +48,6 @@ Kp_melon = rospy.get_param("/Kp_melon")
 melon_state = False
 melon_indexed = False
 trailer_state = ""
-
 def steeringCallback(data):
     global steering
     steering = data.data
@@ -112,6 +112,7 @@ def speed_control():
     p.setIMax(I_max)
     p.setIMin(I_min)
     while not rospy.is_shutdown():
+        byPassPedalPos = rospy.get_param("/bypassPedalPos")
         steering_melon = 0
         if melon_detected and not melon_indexed:
             melon_state = True
@@ -132,13 +133,14 @@ def speed_control():
         else:
             steering_melon = steering
 
+        if not speed_set == -1:
 
-        p.setPoint(speed_set)
-        pid = p.update(speed_feedback)
-        if(pid > 1):
-            pid = 1
-        elif pid < 0:
-            pid = 0
+            p.setPoint(speed_set)
+            pid = p.update(speed_feedback)
+            if(pid > 1):
+                pid = 1
+            elif pid < 0:
+                pid = 0
 
         if engineCut:
             msg.engineCut = True
@@ -148,20 +150,22 @@ def speed_control():
         if melon_detection_Bypass:
             msg.steering_percent = steering
             if pidBypass:
-                msg.pedal_percent = speed_set
+                msg.pedal_percent = byPassPedalPos
             else:
                 msg.pedal_percent = pid
         else:
             msg.steering_percent = steering_melon
             if pidBypass:
-                msg.pedal_percent = speed_set
+                msg.pedal_percent = byPassPedalPos
             else:
                 msg.pedal_percent = pid
         if trailer_state == "Picking up Watermelon":
-            msg.pedal_percent = -1 #bypass speed control and stop the car
+            msg.pedal_percent = 10 #bypass speed control and stop the car
         if object_detected:
-            msg.pedal_percent = -1
-
+            msg.pedal_percent = 10
+        if speed_set == -1:
+            msg.pedal_percent = 10
+        print(msg.pedal_percent)
         pub.publish(msg)
         rate.sleep()
 
