@@ -89,8 +89,9 @@ def execute(cntrl):
     while not rospy.is_shutdown():
         velocity = int(rospy.get_param("/Vehicle_speed_in_km_hr")) #km/hr
         cntrl.maximumVelocity = velocity
-        restart = rospy.get_param("/PP_restart")
-        if restart:
+        restart = int(rospy.get_param("/PP_restart"))
+        start = int(rospy.get_param("StartWaypointNav"))
+        if restart == 1:
             cntrl.currWpIdx = 0
         # Compute the new Euclidean error:
         current_goalPoint = Point32(goalPoint.x,goalPoint.y,0)
@@ -100,39 +101,41 @@ def execute(cntrl):
         pub_goal.publish(current_goalPoint)
 
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
-
+        if start == 1:
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
-        if (distance2Goal < 0.2):
+            if (distance2Goal < 0.5):
 
-            # Make the AckermannVehicle stop where it is
-            #pub.publish(stationaryCommand)
+                # Make the AckermannVehicle stop where it is
+                #pub.publish(stationaryCommand)
 
-            print (" Reached Waypoint # ", cntrl.currWpIdx +1)
+                print (" Reached Waypoint # ", cntrl.currWpIdx +1)
 
-            # Update goal Point to next point in the waypoint list:
-            cntrl.currWpIdx +=1
+                # Update goal Point to next point in the waypoint list:
+                cntrl.currWpIdx +=1
 
-            if cntrl.currWpIdx < cntrl.nPts:
-                goalPoint = cntrl.wpList[cntrl.currWpIdx]
-                goalReached = False
+                if cntrl.currWpIdx < cntrl.nPts:
+                    goalPoint = cntrl.wpList[cntrl.currWpIdx]
+                    goalReached = False
 
-            else:
+                else:
 
-                print (" --- All Waypoints have been conquered! Mission Accomplished Mr Hunt !!! --- ")
-                goalReached = True
-
-
-            print (" New goal is: ")
-            print (goalPoint.x)
-            print (goalPoint.y)
+                    print (" --- All Waypoints have been conquered! Mission Accomplished Mr Hunt !!! --- ")
+                    goalReached = True
 
 
-        # print (" Euclidean Error = ", euclideanError , " meters")
+                print (" New goal is: ")
+                print (goalPoint.x)
+                print (goalPoint.y)
 
-        # Case #2:
-        #if (euclideanError > threshold):
-        vel, delta, distance2Goal = cntrl.compute_steering_vel_cmds(currentPos)
 
+            # print (" Euclidean Error = ", euclideanError , " meters")
+
+            # Case #2:
+            #if (euclideanError > threshold):
+            vel, delta, distance2Goal = cntrl.compute_steering_vel_cmds(currentPos)
+        else:
+            vel = -1
+            delta = 0
         #command = Point32()
         #command.x = delta
         #command.y = vel

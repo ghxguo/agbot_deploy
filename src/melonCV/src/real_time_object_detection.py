@@ -101,6 +101,7 @@ def CVControl():
 				y = startY - 15 if startY - 15 > 15 else startY + 15
 				cv2.putText(frame, label, (startX, y),
 					cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[idx], 2)
+				size = (endX - startX)*(endY-startY)
 				if idx == 21:
 					centerX = (endX - startX)/2 + startX
 					centerY = (endY - startY)/2 + startY
@@ -109,7 +110,11 @@ def CVControl():
 						center[1] = centerY
 						prev_Y = centerY
 				if idx == 15 or idx == 7 or idx == 10 or idx == 12 or idx == 13 or idx == 14 or idx == 17:
-					object_pub.publish(CLASSES[idx])
+					if size > 150*150:
+						object_pub.publish(CLASSES[idx])
+				else:
+						object_pub.publish("None")
+
 		#output result every 10 frames
 		frame_count += 1
 		if frame_count == 10:
@@ -119,7 +124,6 @@ def CVControl():
 			else:
 				melon_pub.publish(False)
 			location_pub.publish(Int16MultiArray(data=center))
-			object_pub.publish("None")
 			prev_Y = 0
 			center[0] = 0
 			center[1] = 0

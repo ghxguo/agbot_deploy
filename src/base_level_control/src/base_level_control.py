@@ -20,6 +20,7 @@ from std_msgs.msg import Bool
 from std_msgs.msg import Int16MultiArray
 from std_msgs.msg import String
 import PID
+from novatel_gps_msgs.msg import NovatelVelocity
 
 global steering
 global speed_set
@@ -56,7 +57,7 @@ def speedCallback(data):
     speed_set = data.data
 def GPSCallback(data):
     global speed_feedback
-    speed_feedback = data.data
+    speed_feedback = data.horizontal_speed
 def engineCutCallback(data):
     global engineCut
     engineCut = data.data
@@ -98,7 +99,7 @@ def speed_control():
     rospy.Subscriber("speed_setpoint", Float32, speedCallback)
     rospy.Subscriber("steering_cmd", Float32, steeringCallback)
     rospy.Subscriber("engine_cut", Bool, engineCutCallback)
-    rospy.Subscriber("GPS_speed", Float32, GPSCallback)
+    rospy.Subscriber("bestvel", NovatelVelocity, GPSCallback)
     rospy.Subscriber("watermelon_location", Int16MultiArray, watermelon_location_Callback)
     rospy.Subscriber("melon_detected", Bool, melon_detected_Callback)
     rospy.Subscriber("critical_object_detected", String, objectCallback)
@@ -111,6 +112,7 @@ def speed_control():
     p.setKp(Kp)
     p.setIMax(I_max)
     p.setIMin(I_min)
+    simpleSpeedState = 1
     while not rospy.is_shutdown():
         pidBypass = int(rospy.get_param("/pidBypass(0_or_1)"))
         melon_detection_Bypass = int(rospy.get_param("/melonBypass(0_or_1)"))
@@ -131,6 +133,19 @@ def speed_control():
         steering_melon = 0
 
         if pidBypass:
+            error = speed_set - speed_feedback
+            if simpleSpeedState == 1:
+                msg.pedal_percent = byPassPedalPosMax
+                if error > speed_set*byPassBandWidth:
+                    simpleSpeedState = 2
+            if simpleSpeedState == 2:
+                msg.pedal_percent = (byPassPedalPosMax + byPassPedalPosMin)/2
+
+
+
+
+
+
             error = speed_set - speed_feedback
             if error < 0 - speed_set*byPassBandWidth:
                 msg.pedal_percent = byPassPedalPosMin
