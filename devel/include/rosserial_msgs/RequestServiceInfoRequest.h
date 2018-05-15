@@ -1,1 +1,0 @@
-/home/hongxu/agbot_deploy/devel/.private/rosserial_msgs/include/rosserial_msgs/RequestServiceInfoRequest.h

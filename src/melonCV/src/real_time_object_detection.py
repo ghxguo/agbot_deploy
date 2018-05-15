@@ -20,7 +20,7 @@ from cv_bridge import CvBridge, CvBridgeError
 import rospkg
 import os
 maxPixel = rospy.get_param("/maxPixel")
-vs = VideoStream(src=0).start()
+vs = VideoStream(src=1).start()
 
 def CVControl():
 	rspkg = rospkg.RosPack()

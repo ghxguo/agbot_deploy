@@ -1,8 +1,0 @@
-prefix=/home/hongxu/agbot_deploy/devel/.private/webcontroller
-
-Name: webcontroller
-Description: Description of webcontroller
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/hongxu/agbot_deploy/devel/.private/webcontroller/lib 
-Requires: 

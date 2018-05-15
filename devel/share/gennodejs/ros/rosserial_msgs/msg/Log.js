@@ -1,1 +1,0 @@
-/home/hongxu/agbot_deploy/devel/.private/rosserial_msgs/share/gennodejs/ros/rosserial_msgs/msg/Log.js

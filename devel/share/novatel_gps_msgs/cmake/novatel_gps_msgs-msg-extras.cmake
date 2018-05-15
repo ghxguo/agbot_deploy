@@ -1,1 +1,1 @@
-/home/hongxu/agbot_deploy/devel/.private/novatel_gps_msgs/share/novatel_gps_msgs/cmake/novatel_gps_msgs-msg-extras.cmake
+/home/agbot/agbot_deploy/devel/.private/novatel_gps_msgs/share/novatel_gps_msgs/cmake/novatel_gps_msgs-msg-extras.cmake

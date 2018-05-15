@@ -1,1 +1,1 @@
-/home/hongxu/agbot_deploy/devel/.private/novatel_gps_driver/share/novatel_gps_driver/cmake/novatel_gps_driverConfig-version.cmake
+/home/agbot/agbot_deploy/devel/.private/novatel_gps_driver/share/novatel_gps_driver/cmake/novatel_gps_driverConfig-version.cmake

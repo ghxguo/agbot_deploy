@@ -1,8 +1,8 @@
-prefix=/home/hongxu/agbot_deploy/devel/.private/rtk
+prefix=/home/agbot/agbot_deploy/devel/.private/rtk
 
 Name: rtk
 Description: Description of rtk
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/hongxu/agbot_deploy/devel/.private/rtk/lib 
+Libs: -L/home/agbot/agbot_deploy/devel/.private/rtk/lib 
 Requires: 

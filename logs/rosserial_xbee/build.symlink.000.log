@@ -1,5 +1,0 @@
-Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_xbee.pc
-Symlinking /home/hongxu/agbot_deploy/devel/lib/python2.7/dist-packages/xbee/__init__.py
-Symlinking /home/hongxu/agbot_deploy/devel/lib/python2.7/dist-packages/rosserial_xbee/__init__.py
-Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig.cmake
-Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig-version.cmake

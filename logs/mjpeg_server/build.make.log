@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target mjpeg_server[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/mjpeg_server.dir/src/mjpeg_server.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/hongxu/agbot_deploy/devel/.private/mjpeg_server/lib/mjpeg_server/mjpeg_server[0m
-[100%] Built target mjpeg_server

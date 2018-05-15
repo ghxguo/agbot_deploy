@@ -67,14 +67,14 @@ set(TCP_command_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(TCP_command_SOURCE_PREFIX /home/hongxu/agbot_deploy/src/TCP_command)
-  set(TCP_command_DEVEL_PREFIX /home/hongxu/agbot_deploy/devel/.private/TCP_command)
+  set(TCP_command_SOURCE_PREFIX /home/agbot/agbot_deploy/src/TCP_command)
+  set(TCP_command_DEVEL_PREFIX /home/agbot/agbot_deploy/devel/.private/TCP_command)
   set(TCP_command_INSTALL_PREFIX "")
   set(TCP_command_PREFIX ${TCP_command_DEVEL_PREFIX})
 else()
   set(TCP_command_SOURCE_PREFIX "")
   set(TCP_command_DEVEL_PREFIX "")
-  set(TCP_command_INSTALL_PREFIX /home/hongxu/agbot_deploy/install)
+  set(TCP_command_INSTALL_PREFIX /home/agbot/agbot_deploy/install)
   set(TCP_command_PREFIX ${TCP_command_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(TCP_command_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/hongxu/agbot_deploy/devel/.private/TCP_command/include " STREQUAL " ")
+if(NOT "/home/agbot/agbot_deploy/devel/.private/TCP_command/include " STREQUAL " ")
   set(TCP_command_INCLUDE_DIRS "")
-  set(_include_dirs "/home/hongxu/agbot_deploy/devel/.private/TCP_command/include")
+  set(_include_dirs "/home/agbot/agbot_deploy/devel/.private/TCP_command/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/hongxu/agbot_deploy/devel/.private/TCP_command/include " STREQUAL 
         message(FATAL_ERROR "Project 'TCP_command' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'TCP_command' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hongxu/agbot_deploy/src/TCP_command/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'TCP_command' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/agbot/agbot_deploy/src/TCP_command/${idir}'.  ${_report}")
     endif()
     _list_append_unique(TCP_command_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hongxu/agbot_deploy/devel/.private/TCP_command/lib;/home/hongxu/agbot_deploy/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/agbot/agbot_deploy/devel/.private/TCP_command/lib;/home/agbot/agbot_deploy/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

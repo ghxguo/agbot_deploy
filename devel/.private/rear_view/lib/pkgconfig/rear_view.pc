@@ -1,0 +1,8 @@
+prefix=/home/agbot/agbot_deploy/devel/.private/rear_view
+
+Name: rear_view
+Description: Description of rear_view
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/agbot/agbot_deploy/devel/.private/rear_view/lib 
+Requires: 
