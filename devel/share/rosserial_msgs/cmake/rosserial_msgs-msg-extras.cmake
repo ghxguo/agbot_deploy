@@ -1,0 +1,1 @@
+/home/hongxu/agbot_deploy/devel/.private/rosserial_msgs/share/rosserial_msgs/cmake/rosserial_msgs-msg-extras.cmake

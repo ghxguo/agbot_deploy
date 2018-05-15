@@ -1,0 +1,6 @@
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_server/lib/pkgconfig/rosserial_server.pc, /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_server.pc)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_server/lib/rosserial_server/udp_socket_node, /home/hongxu/agbot_deploy/devel/lib/rosserial_server/udp_socket_node)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_server/lib/rosserial_server/serial_node, /home/hongxu/agbot_deploy/devel/lib/rosserial_server/serial_node)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_server/lib/rosserial_server/socket_node, /home/hongxu/agbot_deploy/devel/lib/rosserial_server/socket_node)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake, /home/hongxu/agbot_deploy/devel/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake)
+Linked: (/home/hongxu/agbot_deploy/devel/.private/rosserial_server/share/rosserial_server/cmake/rosserial_serverConfig.cmake, /home/hongxu/agbot_deploy/devel/share/rosserial_server/cmake/rosserial_serverConfig.cmake)

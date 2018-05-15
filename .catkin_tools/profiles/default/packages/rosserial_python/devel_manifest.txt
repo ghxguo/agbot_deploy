@@ -1,0 +1,5 @@
+rosserial/rosserial_python
+/home/hongxu/agbot_deploy/devel/.private/rosserial_python/lib/pkgconfig/rosserial_python.pc /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_python.pc
+/home/hongxu/agbot_deploy/devel/.private/rosserial_python/lib/python2.7/dist-packages/rosserial_python/__init__.py /home/hongxu/agbot_deploy/devel/lib/python2.7/dist-packages/rosserial_python/__init__.py
+/home/hongxu/agbot_deploy/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig.cmake /home/hongxu/agbot_deploy/devel/share/rosserial_python/cmake/rosserial_pythonConfig.cmake
+/home/hongxu/agbot_deploy/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake /home/hongxu/agbot_deploy/devel/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake

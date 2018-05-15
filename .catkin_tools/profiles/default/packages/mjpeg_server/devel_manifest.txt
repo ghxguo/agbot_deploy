@@ -1,0 +1,5 @@
+mjpeg_server
+/home/hongxu/agbot_deploy/devel/.private/mjpeg_server/lib/mjpeg_server/mjpeg_server /home/hongxu/agbot_deploy/devel/lib/mjpeg_server/mjpeg_server
+/home/hongxu/agbot_deploy/devel/.private/mjpeg_server/lib/pkgconfig/mjpeg_server.pc /home/hongxu/agbot_deploy/devel/lib/pkgconfig/mjpeg_server.pc
+/home/hongxu/agbot_deploy/devel/.private/mjpeg_server/share/mjpeg_server/cmake/mjpeg_serverConfig-version.cmake /home/hongxu/agbot_deploy/devel/share/mjpeg_server/cmake/mjpeg_serverConfig-version.cmake
+/home/hongxu/agbot_deploy/devel/.private/mjpeg_server/share/mjpeg_server/cmake/mjpeg_serverConfig.cmake /home/hongxu/agbot_deploy/devel/share/mjpeg_server/cmake/mjpeg_serverConfig.cmake

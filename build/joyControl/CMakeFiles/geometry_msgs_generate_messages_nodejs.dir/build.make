@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agbot/agbot_deploy/src/joyControl
+CMAKE_SOURCE_DIR = /home/hongxu/agbot_deploy/src/joyControl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agbot/agbot_deploy/build/joyControl
+CMAKE_BINARY_DIR = /home/hongxu/agbot_deploy/build/joyControl
 
 # Utility rule file for geometry_msgs_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/agbot/agbot_deploy/build/joyControl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/agbot/agbot_deploy/src/joyControl /home/agbot/agbot_deploy/src/joyControl /home/agbot/agbot_deploy/build/joyControl /home/agbot/agbot_deploy/build/joyControl /home/agbot/agbot_deploy/build/joyControl/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hongxu/agbot_deploy/build/joyControl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hongxu/agbot_deploy/src/joyControl /home/hongxu/agbot_deploy/src/joyControl /home/hongxu/agbot_deploy/build/joyControl /home/hongxu/agbot_deploy/build/joyControl /home/hongxu/agbot_deploy/build/joyControl/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 

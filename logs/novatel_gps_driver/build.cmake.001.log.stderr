@@ -1,0 +1,30 @@
+[33m[1mCMake Warning[0m at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:76 (find_package):
+  Could not find a package configuration file provided by "gps_common" with
+  any of the following names:
+
+    gps_commonConfig.cmake
+    gps_common-config.cmake
+
+  Add the installation prefix of "gps_common" to CMAKE_PREFIX_PATH or set
+  "gps_common_DIR" to a directory containing one of the above files.  If
+  "gps_common" provides a separate development package or SDK, be sure it has
+  been installed.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:27 (find_package)
+
+
+[31m[1mCMake Error[0m at /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "gps_common" with
+  any of the following names:
+
+    gps_commonConfig.cmake
+    gps_common-config.cmake
+
+  Add the installation prefix of "gps_common" to CMAKE_PREFIX_PATH or set
+  "gps_common_DIR" to a directory containing one of the above files.  If
+  "gps_common" provides a separate development package or SDK, be sure it has
+  been installed.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:27 (find_package)
+
+

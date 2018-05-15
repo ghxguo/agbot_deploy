@@ -1,0 +1,3 @@
+Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_windows.pc
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_windows/cmake/rosserial_windowsConfig.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_windows/cmake/rosserial_windowsConfig-version.cmake

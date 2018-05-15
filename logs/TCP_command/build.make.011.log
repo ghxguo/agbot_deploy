@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target _TCP_command_generate_messages_check_deps_tcpCommand[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _TCP_command_generate_messages_check_deps_tcpCommand
+[35m[1mScanning dependencies of target TCP_command_generate_messages_eus[0m
+[35m[1mScanning dependencies of target TCP_command_generate_messages_py[0m
+[35m[1mScanning dependencies of target TCP_command_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target TCP_command_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target TCP_command_generate_messages_lisp[0m
+[ 57%] Built target TCP_command_generate_messages_eus
+[ 57%] Built target TCP_command_generate_messages_py
+[ 71%] Built target TCP_command_generate_messages_lisp
+[ 85%] Built target TCP_command_generate_messages_nodejs
+[100%] Built target TCP_command_generate_messages_cpp
+[35m[1mScanning dependencies of target TCP_command_generate_messages[0m
+[100%] Built target TCP_command_generate_messages

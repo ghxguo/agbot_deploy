@@ -1,0 +1,40 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target _TCP_command_generate_messages_check_deps_tcpCommand[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _TCP_command_generate_messages_check_deps_tcpCommand
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target TCP_command_generate_messages_eus[0m
+[ 14%] [34m[1mGenerating EusLisp code from TCP_command/tcpCommand.msg[0m
+[ 28%] [34m[1mGenerating EusLisp manifest code for TCP_command[0m
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "joyControl" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "melonCV" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[35m[1mScanning dependencies of target TCP_command_generate_messages_py[0m
+[ 42%] [34m[1mGenerating Python from MSG TCP_command/tcpCommand[0m
+[35m[1mScanning dependencies of target TCP_command_generate_messages_lisp[0m
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 57%] [34m[1mGenerating Lisp code from TCP_command/tcpCommand.msg[0m
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 71%] [34m[1mGenerating Python msg __init__.py for TCP_command[0m
+WARNING: Package name "joyControl" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "melonCV" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 71%] Built target TCP_command_generate_messages_lisp
+[35m[1mScanning dependencies of target TCP_command_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target TCP_command_generate_messages_cpp[0m
+[ 85%] [34m[1mGenerating Javascript code from TCP_command/tcpCommand.msg[0m
+[100%] [34m[1mGenerating C++ code from TCP_command/tcpCommand.msg[0m
+[100%] Built target TCP_command_generate_messages_nodejs
+[100%] Built target TCP_command_generate_messages_py
+[100%] Built target TCP_command_generate_messages_cpp
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[100%] Built target TCP_command_generate_messages_eus
+[35m[1mScanning dependencies of target TCP_command_generate_messages[0m
+[100%] Built target TCP_command_generate_messages

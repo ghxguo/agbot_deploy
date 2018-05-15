@@ -1,0 +1,1 @@
+/home/hongxu/agbot_deploy/devel/.private/mjpeg_server/share/mjpeg_server/cmake/mjpeg_serverConfig-version.cmake

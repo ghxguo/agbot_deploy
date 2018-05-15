@@ -1,0 +1,12 @@
+Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/novatel_imu.pc
+Symlinking /home/hongxu/agbot_deploy/devel/share/novatel_imu/cmake/novatel_imuConfig-version.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/share/novatel_imu/cmake/novatel_imuConfig.cmake
+Cleaning: (/home/agbot/agbot_deploy/devel/.private/novatel_imu/lib/pkgconfig/novatel_imu.pc, /home/agbot/agbot_deploy/devel/lib/pkgconfig/novatel_imu.pc)
+Cleaning: (/home/agbot/agbot_deploy/devel/.private/novatel_imu/share/novatel_imu/cmake/novatel_imuConfig.cmake, /home/agbot/agbot_deploy/devel/share/novatel_imu/cmake/novatel_imuConfig.cmake)
+Cleaning: (/home/agbot/agbot_deploy/devel/.private/novatel_imu/share/novatel_imu/cmake/novatel_imuConfig-version.cmake, /home/agbot/agbot_deploy/devel/share/novatel_imu/cmake/novatel_imuConfig-version.cmake)
+Unlinking: /home/agbot/agbot_deploy/devel/lib/pkgconfig/novatel_imu.pc
+Already unlinked: {}
+Unlinking: /home/agbot/agbot_deploy/devel/share/novatel_imu/cmake/novatel_imuConfig.cmake
+Already unlinked: {}
+Unlinking: /home/agbot/agbot_deploy/devel/share/novatel_imu/cmake/novatel_imuConfig-version.cmake
+Already unlinked: {}

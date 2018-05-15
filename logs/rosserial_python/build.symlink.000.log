@@ -1,0 +1,4 @@
+Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_python.pc
+Symlinking /home/hongxu/agbot_deploy/devel/lib/python2.7/dist-packages/rosserial_python/__init__.py
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_python/cmake/rosserial_pythonConfig.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake

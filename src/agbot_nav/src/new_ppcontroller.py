@@ -18,7 +18,7 @@ rospack = rospkg.RosPack()
 
 ### Define constants:
 pi = 3.141592653589793238
-
+velocity = int(rospy.get_param("/Vehicle_speed_in_km_hr")) #km/hr
 # Define global variables:
 global currentPos
 currentPos = Point()
@@ -26,7 +26,7 @@ global file_name
 # file_name = rospy.get_param("/file_name")
 file_name = "waypoints_5_7_3.txt"
 # Callback function for subscriber to Position and orientation topic:
-
+restart = False
 def pose_callback(data):
 
     global currentPos
@@ -47,7 +47,7 @@ def initialize():
 
     global file_name
     # Create objects for AckermannVehicle and Pure Pursuit controller:
-    mule = AckermannVehicle(2.065,4.6,2.2)
+    mule = AckermannVehicle(2.065,4.6,velocity)
     cntrl = PPController(0,mule.length,mule.minTurningRadius,mule.maximumVelocity)
 
     cntrl.initialize(os.path.join(rospack.get_path("agbot_nav"),"src",file_name))
@@ -64,7 +64,7 @@ def execute(cntrl):
     rospy.Subscriber("/fix", NavSatFix, pose_callback)
     rospy.Subscriber("/novatel_imu", Point32, heading_callback)
     pub_steering = rospy.Publisher('steering_cmd', Float32, queue_size =10)
-    pub_padel = rospy.Publisher('speed_setpoint', Float32, queue_size = 10)
+    pub_pedal = rospy.Publisher('speed_setpoint', Float32, queue_size = 10)
     pub_goal = rospy.Publisher('/current_goalpoint',Point32,queue_size=10)
     rospy.init_node('ppcontroller', anonymous=True)
 
@@ -84,10 +84,14 @@ def execute(cntrl):
 
     stationaryCommand.x = 0
     stationaryCommand.y = 0
-
+    goalReached = False
     # Loop through as long as the node is not shutdown:
     while not rospy.is_shutdown():
-
+        velocity = int(rospy.get_param("/Vehicle_speed_in_km_hr")) #km/hr
+        cntrl.maximumVelocity = velocity
+        restart = rospy.get_param("/PP_restart")
+        if restart:
+            cntrl.currWpIdx = 0
         # Compute the new Euclidean error:
         current_goalPoint = Point32(goalPoint.x,goalPoint.y,0)
         print('current Index: ',cntrl.currWpIdx)
@@ -110,11 +114,12 @@ def execute(cntrl):
 
             if cntrl.currWpIdx < cntrl.nPts:
                 goalPoint = cntrl.wpList[cntrl.currWpIdx]
+                goalReached = False
 
             else:
 
                 print (" --- All Waypoints have been conquered! Mission Accomplished Mr Hunt !!! --- ")
-                break
+                goalReached = True
 
 
             print (" New goal is: ")
@@ -131,10 +136,11 @@ def execute(cntrl):
         #command = Point32()
         #command.x = delta
         #command.y = vel
-
+        if goalReached:
+            vel = -1
         # Publish the computed command:
         pub_steering.publish(-delta)
-        pub_padel.publish(vel)
+        pub_pedal.publish(vel)
 
             # Recompute the Euclidean error to see if its reducing:
             #euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
