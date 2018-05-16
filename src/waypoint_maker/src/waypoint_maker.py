@@ -61,7 +61,7 @@ def waypoint_maker():
 
         euclideanDistance = math.sqrt((math.pow((current_x-previous_x),2) + math.pow((current_y-previous_y),2)))
 
-        if euclideanDistance > 1:
+        if euclideanDistance > 0.5:
             print("distance = ", euclideanDistance)
 
             waypoint_file.write(str(current_x)+","+str(current_y)+"\r\n")

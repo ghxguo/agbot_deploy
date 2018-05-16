@@ -104,7 +104,7 @@ def execute(cntrl):
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
         if start == 1:
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
-            if (distance2Goal < 0.5 and not goalReached):
+            if (distance2Goal < 0.2 and not goalReached):
 
                 # Make the AckermannVehicle stop where it is
                 #pub.publish(stationaryCommand)
