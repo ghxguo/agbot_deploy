@@ -114,8 +114,8 @@ def speed_control():
     p.setIMin(I_min)
     simpleSpeedState = 1
     while not rospy.is_shutdown():
-        pidBypass = int(rospy.get_param("/pidBypass(0_or_1)"))
-        melon_detection_Bypass = int(rospy.get_param("/melonBypass(0_or_1)"))
+        pidBypass = int(rospy.get_param("/pidBypass_0_or_1"))
+        melon_detection_Bypass = int(rospy.get_param("/melonBypass_0_or_1"))
         Kp_melon = float(rospy.get_param("/Kp_melon"))
         byPassPedalPosMax = float(rospy.get_param("/bypassPedalPosMax"))
         byPassPedalPosMin = float(rospy.get_param("/bypassPedalPosMin"))
@@ -169,7 +169,7 @@ def speed_control():
             msg.engineCut = False
 
         if melon_detection_Bypass:
-            msg.steering_percent = steering
+            msg.steering_percent = float(steering)
 
         else:
             if melon_detected and not melon_indexed:
@@ -194,7 +194,7 @@ def speed_control():
                     melon_indexed = False
             else:
                 steering_melon = steering
-            msg.steering_percent = steering_melon
+            msg.steering_percent = float(steering_melon)
 
         if trailer_state == "Picking up Watermelon" or \
             trailer_state == "Moving Watermelon to Bin" or \

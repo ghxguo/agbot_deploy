@@ -1,0 +1,3 @@
+Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_test.pc
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_test/cmake/rosserial_testConfig.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_test/cmake/rosserial_testConfig-version.cmake

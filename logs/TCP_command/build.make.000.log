@@ -13,20 +13,20 @@
 [35m[1mScanning dependencies of target TCP_command_generate_messages_eus[0m
 [ 14%] [34m[1mGenerating EusLisp code from TCP_command/tcpCommand.msg[0m
 [ 28%] [34m[1mGenerating EusLisp manifest code for TCP_command[0m
-WARNING: Package name "TCP_command" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "TCP_command" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "joyControl" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "melonCV" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "TCP_command" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "TCP_command" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "joyControl" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "melonCV" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-WARNING: Package name "TCP_command" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-[ 28%] Built target TCP_command_generate_messages_eus
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "joyControl" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "melonCV" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
 [35m[1mScanning dependencies of target TCP_command_generate_messages_py[0m
 [ 42%] [34m[1mGenerating Python from MSG TCP_command/tcpCommand[0m
 [ 57%] [34m[1mGenerating Python msg __init__.py for TCP_command[0m
 [ 57%] Built target TCP_command_generate_messages_py
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "joyControl" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "melonCV" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "TCP_command" does not follow the naming conventions. It should start witha lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 57%] Built target TCP_command_generate_messages_eus
 [35m[1mScanning dependencies of target TCP_command_generate_messages_lisp[0m
 [ 71%] [34m[1mGenerating Lisp code from TCP_command/tcpCommand.msg[0m
 [ 71%] Built target TCP_command_generate_messages_lisp

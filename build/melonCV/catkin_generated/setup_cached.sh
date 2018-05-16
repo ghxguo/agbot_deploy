@@ -7,9 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/agbot/agbot_deploy/devel/.private/melonCV:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/agbot/agbot_deploy/devel/.private/melonCV/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/agbot/agbot_deploy/devel/.private/melonCV/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/agbot/agbot_deploy/build/melonCV"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/agbot/agbot_deploy/devel/.private/melonCV/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/agbot/agbot_deploy/src/melonCV:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/hongxu/agbot_deploy/devel/.private/melonCV:$CMAKE_PREFIX_PATH"
+export PWD="/home/hongxu/agbot_deploy/build/melonCV"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/hongxu/agbot_deploy/devel/.private/melonCV/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/hongxu/agbot_deploy/src/melonCV:$ROS_PACKAGE_PATH"

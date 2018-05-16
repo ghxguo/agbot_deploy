@@ -87,7 +87,7 @@ def execute(cntrl):
     goalReached = False
     # Loop through as long as the node is not shutdown:
     while not rospy.is_shutdown():
-        velocity = int(rospy.get_param("/Vehicle_speed_in_km_hr")) #km/hr
+        velocity = int(rospy.get_param("/Vehicle_speed_in_m_s")) #km/hr
         cntrl.maximumVelocity = velocity
         restart = int(rospy.get_param("/PP_restart"))
         start = int(rospy.get_param("StartWaypointNav"))
@@ -133,7 +133,8 @@ def execute(cntrl):
 
             # Case #2:
             #if (euclideanError > threshold):
-            vel, delta, distance2Goal = cntrl.compute_steering_vel_cmds(currentPos)
+			if not goalReached:
+            	vel, delta, distance2Goal = cntrl.compute_steering_vel_cmds(currentPos)
         else:
             vel = -1
             delta = 0

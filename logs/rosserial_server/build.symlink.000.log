@@ -1,0 +1,6 @@
+Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_server.pc
+Symlinking /home/hongxu/agbot_deploy/devel/lib/rosserial_server/udp_socket_node
+Symlinking /home/hongxu/agbot_deploy/devel/lib/rosserial_server/serial_node
+Symlinking /home/hongxu/agbot_deploy/devel/lib/rosserial_server/socket_node
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_server/cmake/rosserial_serverConfig-version.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/share/rosserial_server/cmake/rosserial_serverConfig.cmake

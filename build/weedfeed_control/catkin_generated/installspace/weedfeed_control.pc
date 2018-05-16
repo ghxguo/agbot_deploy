@@ -1,0 +1,8 @@
+prefix=/home/hongxu/agbot_deploy/install
+
+Name: weedfeed_control
+Description: Description of weedfeed_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hongxu/agbot_deploy/install/lib 
+Requires: 

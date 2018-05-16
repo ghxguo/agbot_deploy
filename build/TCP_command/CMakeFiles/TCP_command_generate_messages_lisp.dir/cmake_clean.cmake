@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TCP_command_generate_messages_lisp"
-  "/home/agbot/agbot_deploy/devel/.private/TCP_command/share/common-lisp/ros/TCP_command/msg/tcpCommand.lisp"
+  "/home/hongxu/agbot_deploy/devel/.private/TCP_command/share/common-lisp/ros/TCP_command/msg/tcpCommand.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,0 +1,4 @@
+weedfeed_control
+/home/hongxu/agbot_deploy/devel/.private/weedfeed_control/lib/pkgconfig/weedfeed_control.pc /home/hongxu/agbot_deploy/devel/lib/pkgconfig/weedfeed_control.pc
+/home/hongxu/agbot_deploy/devel/.private/weedfeed_control/share/weedfeed_control/cmake/weedfeed_controlConfig-version.cmake /home/hongxu/agbot_deploy/devel/share/weedfeed_control/cmake/weedfeed_controlConfig-version.cmake
+/home/hongxu/agbot_deploy/devel/.private/weedfeed_control/share/weedfeed_control/cmake/weedfeed_controlConfig.cmake /home/hongxu/agbot_deploy/devel/share/weedfeed_control/cmake/weedfeed_controlConfig.cmake

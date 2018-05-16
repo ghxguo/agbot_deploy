@@ -1,8 +1,8 @@
-Symlinking /home/agbot/agbot_deploy/devel/./setup.sh
-Symlinking /home/agbot/agbot_deploy/devel/./setup.zsh
-Symlinking /home/agbot/agbot_deploy/devel/./_setup_util.py
-Symlinking /home/agbot/agbot_deploy/devel/./env.sh
-Symlinking /home/agbot/agbot_deploy/devel/./setup.bash
-Symlinking /home/agbot/agbot_deploy/devel/lib/pkgconfig/catkin_tools_prebuild.pc
-Symlinking /home/agbot/agbot_deploy/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
-Symlinking /home/agbot/agbot_deploy/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/./_setup_util.py
+Symlinking /home/hongxu/agbot_deploy/devel/./setup.sh
+Symlinking /home/hongxu/agbot_deploy/devel/./setup.zsh
+Symlinking /home/hongxu/agbot_deploy/devel/./setup.bash
+Symlinking /home/hongxu/agbot_deploy/devel/./env.sh
+Symlinking /home/hongxu/agbot_deploy/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /home/hongxu/agbot_deploy/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/hongxu/agbot_deploy/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
