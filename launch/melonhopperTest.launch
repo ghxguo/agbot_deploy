@@ -11,10 +11,10 @@
   <param name="Kp_melon" value = "0.5"/>
   <param name="PP_restart" value = "False"/>
   <param name="StartWaypointNav" value = "0"/>
-  <param name="bypassPedalPosMax" value = "0.4"/>
+  <param name="bypassPedalPosMax" value = "0.5"/>
   <param name="bypassPedalPosMin" value = "0.3"/>
   <param name="byPassBandWidth" value = "0.25"/>
-  <param name="Vehicle_speed_in_km_hr" value = "6" />
+  <param name="Vehicle_speed_in_km_hr" value = "2.3" />
   <param name="speed_Kp" value = "0.2" />
   <param name="speed_Ki" value = "0.1" />
   <param name="speed_Kd" value = "1" />

@@ -49,9 +49,9 @@ class PPController:
         self.nPts = 0
 
         # Tuning gains:
-        self.k_theta = 0.3
+        self.k_theta = 0.25
 
-        self.k_delta = 1.2
+        self.k_delta = 1.4
 
         self.k_vel = 0.1
 

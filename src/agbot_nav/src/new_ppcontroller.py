@@ -24,7 +24,7 @@ global currentPos
 currentPos = Point()
 global file_name
 # file_name = rospy.get_param("/file_name")
-file_name = "waypoints_5_7_3.txt"
+file_name = "waypoints.txt"
 # Callback function for subscriber to Position and orientation topic:
 restart = False
 def pose_callback(data):
@@ -93,6 +93,7 @@ def execute(cntrl):
         start = int(rospy.get_param("StartWaypointNav"))
         if restart == 1:
             cntrl.currWpIdx = 0
+	    goalReached = False
         # Compute the new Euclidean error:
         current_goalPoint = Point32(goalPoint.x,goalPoint.y,0)
         print('current Index: ',cntrl.currWpIdx)
@@ -103,7 +104,7 @@ def execute(cntrl):
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
         if start == 1:
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
-            if (distance2Goal < 0.5):
+            if (distance2Goal < 0.5 and not goalReached):
 
                 # Make the AckermannVehicle stop where it is
                 #pub.publish(stationaryCommand)
