@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/hongxu/agbot_deploy/devel/.private/agbot_nav:$CMAKE_PREFIX_PATH"
-export PWD="/home/hongxu/agbot_deploy/build/agbot_nav"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/hongxu/agbot_deploy/devel/.private/agbot_nav/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/hongxu/agbot_deploy/src/agbot_nav:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/agbot/agbot_deploy/devel/.private/agbot_nav:$CMAKE_PREFIX_PATH"
+export PWD="/home/agbot/agbot_deploy/build/agbot_nav"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/agbot/agbot_deploy/devel/.private/agbot_nav/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/agbot/agbot_deploy/src/agbot_nav:$ROS_PACKAGE_PATH"

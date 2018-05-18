@@ -1,1 +1,1 @@
-/home/hongxu/agbot_deploy/devel/.private/catkin_tools_prebuild/setup.sh
+/home/agbot/agbot_deploy/devel/.private/catkin_tools_prebuild/setup.sh

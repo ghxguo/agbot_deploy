@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/hongxu/agbot_deploy/install/setup.sh
+    local-name: /home/agbot/agbot_deploy/install/setup.sh

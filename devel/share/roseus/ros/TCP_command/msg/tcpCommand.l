@@ -1,1 +1,1 @@
-/home/hongxu/agbot_deploy/devel/.private/TCP_command/share/roseus/ros/TCP_command/msg/tcpCommand.l
+/home/agbot/agbot_deploy/devel/.private/TCP_command/share/roseus/ros/TCP_command/msg/tcpCommand.l

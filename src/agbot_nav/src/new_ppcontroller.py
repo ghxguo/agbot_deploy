@@ -18,7 +18,7 @@ rospack = rospkg.RosPack()
 
 ### Define constants:
 pi = 3.141592653589793238
-velocity = int(rospy.get_param("/Vehicle_speed_in_km_hr")) #km/hr
+velocity = int(rospy.get_param("/Vehicle_speed_in_m_s")) #km/hr
 # Define global variables:
 global currentPos
 currentPos = Point()
@@ -104,7 +104,7 @@ def execute(cntrl):
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
         if start == 1:
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
-            if (distance2Goal < 0.2 and not goalReached):
+            if (distance2Goal < 0.5 and not goalReached):
 
                 # Make the AckermannVehicle stop where it is
                 #pub.publish(stationaryCommand)
@@ -133,8 +133,8 @@ def execute(cntrl):
 
             # Case #2:
             #if (euclideanError > threshold):
-			if not goalReached:
-            	vel, delta, distance2Goal = cntrl.compute_steering_vel_cmds(currentPos)
+	    if not goalReached:
+            		vel, delta, distance2Goal = cntrl.compute_steering_vel_cmds(currentPos)
         else:
             vel = -1
             delta = 0

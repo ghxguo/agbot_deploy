@@ -25,7 +25,7 @@ i = 0
 #while os.path.exists("/home/agbot/agbot_deploy/src/agbot_nav/src/waypoints_%s.txt" % i):
  #   i += 1
   #  print(i)
-waypoint_file =  open("waypoints_5_15_1.txt","w")
+waypoint_file =  open("waypoints_final_2.txt","w")
 #waypoint_file =  open(os.path.join("/home/agbot/agbot_deploy/src/agbot_nav/src/agbot_nav/src/","waypoints_%s.txt" % i),"w")
 
 def pose_callback(data):

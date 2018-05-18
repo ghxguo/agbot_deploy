@@ -1,1 +1,1 @@
-/home/hongxu/agbot_deploy/devel/.private/agbot_nav/lib/pkgconfig/agbot_nav.pc
+/home/agbot/agbot_deploy/devel/.private/agbot_nav/lib/pkgconfig/agbot_nav.pc

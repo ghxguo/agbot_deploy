@@ -1,1 +1,1 @@
-/home/hongxu/agbot_deploy/devel/.private/novatel_gps_msgs/share/common-lisp/ros/novatel_gps_msgs/srv/_package.lisp
+/home/agbot/agbot_deploy/devel/.private/novatel_gps_msgs/share/common-lisp/ros/novatel_gps_msgs/srv/_package.lisp

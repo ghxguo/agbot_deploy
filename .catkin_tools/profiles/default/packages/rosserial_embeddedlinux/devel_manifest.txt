@@ -1,4 +1,0 @@
-rosserial/rosserial_embeddedlinux
-/home/hongxu/agbot_deploy/devel/.private/rosserial_embeddedlinux/lib/pkgconfig/rosserial_embeddedlinux.pc /home/hongxu/agbot_deploy/devel/lib/pkgconfig/rosserial_embeddedlinux.pc
-/home/hongxu/agbot_deploy/devel/.private/rosserial_embeddedlinux/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig-version.cmake /home/hongxu/agbot_deploy/devel/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig-version.cmake
-/home/hongxu/agbot_deploy/devel/.private/rosserial_embeddedlinux/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig.cmake /home/hongxu/agbot_deploy/devel/share/rosserial_embeddedlinux/cmake/rosserial_embeddedlinuxConfig.cmake

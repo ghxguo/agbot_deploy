@@ -1,8 +1,8 @@
-prefix=/home/hongxu/agbot_deploy/devel/.private/novatel_imu
+prefix=/home/agbot/agbot_deploy/devel/.private/novatel_imu
 
 Name: novatel_imu
 Description: Description of novatel_imu
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/hongxu/agbot_deploy/devel/.private/novatel_imu/lib 
+Libs: -L/home/agbot/agbot_deploy/devel/.private/novatel_imu/lib 
 Requires: 
