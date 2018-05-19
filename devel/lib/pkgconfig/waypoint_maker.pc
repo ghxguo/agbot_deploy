@@ -1,1 +1,1 @@
-/home/agbot/agbot_deploy/devel/.private/waypoint_maker/lib/pkgconfig/waypoint_maker.pc
+/home/senoa95/agbot_deploy/devel/.private/waypoint_maker/lib/pkgconfig/waypoint_maker.pc

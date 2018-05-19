@@ -1,1 +1,1 @@
-/home/agbot/agbot_deploy/devel/.private/joyControl/share/joyControl/cmake/joyControlConfig-version.cmake
+/home/senoa95/agbot_deploy/devel/.private/joyControl/share/joyControl/cmake/joyControlConfig-version.cmake

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agbot/agbot_deploy/src/TCP_command
+CMAKE_SOURCE_DIR = /home/senoa95/agbot_deploy/src/TCP_command
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agbot/agbot_deploy/build/TCP_command
+CMAKE_BINARY_DIR = /home/senoa95/agbot_deploy/build/TCP_command
 
 # Utility rule file for std_msgs_generate_messages_py.
 
@@ -67,6 +67,6 @@ CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 CMakeFiles/std_msgs_generate_messages_py.dir/depend:
-	cd /home/agbot/agbot_deploy/build/TCP_command && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/agbot/agbot_deploy/src/TCP_command /home/agbot/agbot_deploy/src/TCP_command /home/agbot/agbot_deploy/build/TCP_command /home/agbot/agbot_deploy/build/TCP_command /home/agbot/agbot_deploy/build/TCP_command/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/senoa95/agbot_deploy/build/TCP_command && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/senoa95/agbot_deploy/src/TCP_command /home/senoa95/agbot_deploy/src/TCP_command /home/senoa95/agbot_deploy/build/TCP_command /home/senoa95/agbot_deploy/build/TCP_command /home/senoa95/agbot_deploy/build/TCP_command/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/depend
 

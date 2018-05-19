@@ -1,8 +1,8 @@
-prefix=/home/agbot/agbot_deploy/devel/.private/weedfeed_control
+prefix=/home/senoa95/agbot_deploy/devel/.private/weedfeed_control
 
 Name: weedfeed_control
 Description: Description of weedfeed_control
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/agbot/agbot_deploy/devel/.private/weedfeed_control/lib 
+Libs: -L/home/senoa95/agbot_deploy/devel/.private/weedfeed_control/lib 
 Requires: 

@@ -1,8 +1,8 @@
-prefix=/home/agbot/agbot_deploy/devel/.private/melonCV
+prefix=/home/senoa95/agbot_deploy/devel/.private/melonCV
 
 Name: melonCV
 Description: Description of melonCV
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/agbot/agbot_deploy/devel/.private/melonCV/lib 
+Libs: -L/home/senoa95/agbot_deploy/devel/.private/melonCV/lib 
 Requires: 

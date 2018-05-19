@@ -1,8 +1,8 @@
-prefix=/home/agbot/agbot_deploy/devel/.private/agbot_nav
+prefix=/home/senoa95/agbot_deploy/devel/.private/agbot_nav
 
 Name: agbot_nav
 Description: Description of agbot_nav
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/agbot/agbot_deploy/devel/.private/agbot_nav/lib 
+Libs: -L/home/senoa95/agbot_deploy/devel/.private/agbot_nav/lib 
 Requires: 

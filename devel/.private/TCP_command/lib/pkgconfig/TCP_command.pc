@@ -1,8 +1,8 @@
-prefix=/home/agbot/agbot_deploy/devel/.private/TCP_command
+prefix=/home/senoa95/agbot_deploy/devel/.private/TCP_command
 
 Name: TCP_command
 Description: Description of TCP_command
 Version: 0.0.0
-Cflags: -I/home/agbot/agbot_deploy/devel/.private/TCP_command/include
-Libs: -L/home/agbot/agbot_deploy/devel/.private/TCP_command/lib 
+Cflags: -I/home/senoa95/agbot_deploy/devel/.private/TCP_command/include
+Libs: -L/home/senoa95/agbot_deploy/devel/.private/TCP_command/lib 
 Requires: roscpp rospy std_msgs message_runtime

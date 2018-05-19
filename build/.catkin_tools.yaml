@@ -1,6 +1,6 @@
-devel_space: /home/agbot/agbot_deploy/devel
+devel_space: /home/senoa95/agbot_deploy/devel
 install: false
-install_space: /home/agbot/agbot_deploy/install
+install_space: /home/senoa95/agbot_deploy/install
 profile: default
-source_space: /home/agbot/agbot_deploy/src
-workspace: /home/agbot/agbot_deploy
+source_space: /home/senoa95/agbot_deploy/src
+workspace: /home/senoa95/agbot_deploy

@@ -1,1 +1,1 @@
-/home/agbot/agbot_deploy/devel/.private/melonCV/lib/pkgconfig/melonCV.pc
+/home/senoa95/agbot_deploy/devel/.private/melonCV/lib/pkgconfig/melonCV.pc

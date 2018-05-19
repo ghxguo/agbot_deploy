@@ -1,8 +1,8 @@
-prefix=/home/agbot/agbot_deploy/install
+prefix=/home/senoa95/agbot_deploy/install
 
 Name: novatel_imu
 Description: Description of novatel_imu
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/agbot/agbot_deploy/install/lib 
+Libs: -L/home/senoa95/agbot_deploy/install/lib 
 Requires: 

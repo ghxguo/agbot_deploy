@@ -1,1 +1,1 @@
-/home/agbot/agbot_deploy/devel/.private/catkin_tools_prebuild/setup.bash
+/home/senoa95/agbot_deploy/devel/.private/catkin_tools_prebuild/setup.bash

@@ -67,14 +67,14 @@ set(novatel_gps_driver_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(novatel_gps_driver_SOURCE_PREFIX /home/agbot/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver)
-  set(novatel_gps_driver_DEVEL_PREFIX /home/agbot/agbot_deploy/devel/.private/novatel_gps_driver)
+  set(novatel_gps_driver_SOURCE_PREFIX /home/senoa95/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver)
+  set(novatel_gps_driver_DEVEL_PREFIX /home/senoa95/agbot_deploy/devel/.private/novatel_gps_driver)
   set(novatel_gps_driver_INSTALL_PREFIX "")
   set(novatel_gps_driver_PREFIX ${novatel_gps_driver_DEVEL_PREFIX})
 else()
   set(novatel_gps_driver_SOURCE_PREFIX "")
   set(novatel_gps_driver_DEVEL_PREFIX "")
-  set(novatel_gps_driver_INSTALL_PREFIX /home/agbot/agbot_deploy/install)
+  set(novatel_gps_driver_INSTALL_PREFIX /home/senoa95/agbot_deploy/install)
   set(novatel_gps_driver_PREFIX ${novatel_gps_driver_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(novatel_gps_driver_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/agbot/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver/include;/usr/include " STREQUAL " ")
+if(NOT "/home/senoa95/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver/include;/usr/include " STREQUAL " ")
   set(novatel_gps_driver_INCLUDE_DIRS "")
-  set(_include_dirs "/home/agbot/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver/include;/usr/include")
+  set(_include_dirs "/home/senoa95/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver/include;/usr/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/agbot/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driv
         message(FATAL_ERROR "Project 'novatel_gps_driver' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'novatel_gps_driver' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/agbot/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'novatel_gps_driver' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/senoa95/agbot_deploy/src/gps/src/novatel_gps_driver/novatel_gps_driver/${idir}'.  ${_report}")
     endif()
     _list_append_unique(novatel_gps_driver_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/agbot/agbot_deploy/devel/.private/novatel_gps_driver/lib;/home/agbot/agbot_deploy/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/senoa95/agbot_deploy/devel/.private/novatel_gps_driver/lib;/home/senoa95/agbot_deploy/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

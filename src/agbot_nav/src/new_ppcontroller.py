@@ -12,6 +12,7 @@ import numpy as np
 import os
 import rospkg
 import utm
+import serial
 
 rospack = rospkg.RosPack()
 
@@ -23,6 +24,7 @@ velocity = int(rospy.get_param("/Vehicle_speed_in_m_s")) #km/hr
 global currentPos
 currentPos = Point()
 global file_name
+ser = serial.Serial("/dev/ttyACM0",12800)
 # file_name = rospy.get_param("/file_name")
 file_name = "waypoints.txt"
 # Callback function for subscriber to Position and orientation topic:
@@ -104,6 +106,7 @@ def execute(cntrl):
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
         if start == 1:
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
+            ser.write("relay on 1\n\r")
             if (distance2Goal < 0.5 and not goalReached):
 
                 # Make the AckermannVehicle stop where it is
@@ -138,6 +141,9 @@ def execute(cntrl):
         else:
             vel = -1
             delta = 0
+            ser.write("relay off 1\n\r")
+
+
         #command = Point32()
         #command.x = delta
         #command.y = vel
