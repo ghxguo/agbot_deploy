@@ -200,8 +200,8 @@ def speed_control():
             trailer_state == "Moving Watermelon to Bin" or \
             trailer_state == "Lowering Scooper":
             msg.pedal_percent = -1 #bypass speed control and stop the car
-        # if not object_detected == "None":
-        #     msg.pedal_percent = -1
+        if not object_detected == "None":
+            msg.pedal_percent = -1
         if speed_set == -1:
             msg.pedal_percent = -1
         print(msg.pedal_percent)

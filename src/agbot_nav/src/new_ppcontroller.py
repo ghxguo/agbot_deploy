@@ -12,7 +12,8 @@ import numpy as np
 import os
 import rospkg
 import utm
-
+import serial
+ser = serial.Serial('/dev/ttyACM0', 12800)
 rospack = rospkg.RosPack()
 
 
@@ -24,7 +25,7 @@ global currentPos
 currentPos = Point()
 global file_name
 # file_name = rospy.get_param("/file_name")
-file_name = "waypoints.txt"
+file_name = "waypoints_watermelon_straight.txt"
 # Callback function for subscriber to Position and orientation topic:
 restart = False
 def pose_callback(data):
@@ -103,6 +104,7 @@ def execute(cntrl):
 
         # euclideanError = math.sqrt((math.pow((goalPoint.x-currentPos.x),2) + math.pow((goalPoint.y-currentPos.y),2)))
         if start == 1:
+            ser.write("relay on 0\n\r")
         # Case #1:Vehicle is in the vicinity of current goal point (waypoint):
             if (distance2Goal < 0.5 and not goalReached):
 
@@ -136,6 +138,7 @@ def execute(cntrl):
 	    if not goalReached:
             		vel, delta, distance2Goal = cntrl.compute_steering_vel_cmds(currentPos)
         else:
+            ser.write("relay off 0\n\r")
             vel = -1
             delta = 0
         #command = Point32()

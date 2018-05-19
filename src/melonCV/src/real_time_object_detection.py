@@ -21,6 +21,8 @@ import rospkg
 import os
 maxPixel = rospy.get_param("/maxPixel")
 vs = VideoStream(src=1).start()
+objectDetected = False
+
 
 def CVControl():
 	rspkg = rospkg.RosPack()
@@ -75,7 +77,7 @@ def CVControl():
 		# predictions
 		net.setInput(blob)
 		detections = net.forward()
-
+		objectDetected = False
 		# loop over the detections
 		for i in np.arange(0, detections.shape[2]):
 			# extract the confidence (i.e., probability) associated with
@@ -111,10 +113,17 @@ def CVControl():
 						prev_Y = centerY
 				if idx == 15 or idx == 7 or idx == 10 or idx == 12 or idx == 13 or idx == 14 or idx == 17:
 					if size > 150*150:
-						object_pub.publish(CLASSES[idx])
+						objectDetected = True
+						#object_pub.publish(CLASSES[idx])
+					else:
+						objectDetected = False
 				else:
-						object_pub.publish("None")
-
+					objectDetected = False
+						#object_pub.publish("None")
+		if objectDetected:
+			object_pub.publish("Detected")
+		else:
+			object_pub.publish("None")
 		#output result every 10 frames
 		frame_count += 1
 		if frame_count == 10:
